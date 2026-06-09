@@ -1,0 +1,93 @@
+/* ============================================================
+   COLORS — Davide Sidoti Design System
+   Dark-first ("Terminal Editorial"). Light theme overrides
+   under [data-theme="light"]. One neon accent: Signal Lime.
+   ============================================================ */
+
+:root {
+  /* --- Accent ramp: Signal Lime --- */
+  --lime-300: #E0FA8E;
+  --lime-400: #D2F66A;
+  --lime-500: #C6F24E;   /* the accent */
+  --lime-600: #A2D330;
+  --lime-700: #5E7D15;   /* accent text on light surfaces */
+  --lime-glow: rgba(198, 242, 78, 0.45);
+
+  /* --- Status hues (constant across themes) --- */
+  --success: #59D67E;
+  --warning: #F2C24E;
+  --danger:  #F26A5B;
+  --info:    #5BA6F2;
+
+  /* ============================================================
+     SEMANTIC — default = DARK
+     ============================================================ */
+
+  /* Surfaces (deep ink, near-black) */
+  --bg:            #08090A;
+  --surface:       #0C0E10;
+  --surface-2:     #111316;
+  --surface-3:     #16181C;
+  --surface-inset: #050607;
+
+  /* Text / ink */
+  --text:           #F3F4F0;
+  --text-secondary: #B6BBC0;
+  --text-muted:     #7C828A;
+  --text-faint:     #565C63;
+  --text-on-accent: #0A0C06;
+
+  /* Accent semantics */
+  --accent:       var(--lime-500);
+  --accent-hover: var(--lime-400);
+  --accent-text:  var(--lime-400);                 /* links/emphasis on dark */
+  --accent-line:  rgba(198, 242, 78, 0.34);        /* hairline accent border */
+  --accent-soft:  rgba(198, 242, 78, 0.12);        /* faint accent fill */
+
+  /* Lines & structure */
+  --border:        rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-accent: var(--accent);
+  --grid-line:     rgba(255, 255, 255, 0.05);
+
+  /* Misc */
+  --overlay-scrim: rgba(5, 6, 7, 0.74);
+  --selection-bg:  var(--lime-500);
+  --selection-fg:  #0A0C06;
+
+  color-scheme: dark;
+}
+
+/* ============================================================
+   LIGHT THEME — warm paper
+   ============================================================ */
+[data-theme="light"] {
+  --bg:            #F6F6F2;
+  --surface:       #FFFFFF;
+  --surface-2:     #F0F0EA;
+  --surface-3:     #E8E8E1;
+  --surface-inset: #EDEDE5;
+
+  --text:           #15171A;
+  --text-secondary: #43484E;
+  --text-muted:     #71777E;
+  --text-faint:     #A0A5AB;
+  --text-on-accent: #0A0C06;
+
+  --accent:       var(--lime-500);
+  --accent-hover: var(--lime-600);
+  --accent-text:  var(--lime-700);                 /* readable lime on paper */
+  --accent-line:  rgba(94, 125, 21, 0.34);
+  --accent-soft:  rgba(162, 211, 48, 0.18);
+
+  --border:        rgba(20, 22, 26, 0.12);
+  --border-strong: rgba(20, 22, 26, 0.22);
+  --border-accent: var(--accent);
+  --grid-line:     rgba(20, 22, 26, 0.06);
+
+  --overlay-scrim: rgba(246, 246, 242, 0.74);
+  --selection-bg:  var(--lime-500);
+  --selection-fg:  #0A0C06;
+
+  color-scheme: light;
+}

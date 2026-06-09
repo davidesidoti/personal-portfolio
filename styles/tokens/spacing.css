@@ -1,0 +1,40 @@
+/* ============================================================
+   SPACING, RADII & LAYOUT — Davide Sidoti Design System
+   4px base grid.
+   ============================================================ */
+
+:root {
+  /* --- Spacing scale (4px base; --space-N ≈ 4·N px) --- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-7:  28px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* --- Radii — sharp & technical --- */
+  --radius-xs:   3px;
+  --radius-sm:   5px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   18px;
+  --radius-2xl:  26px;
+  --radius-full: 999px;
+
+  /* --- Border widths --- */
+  --border-hair:  1px;
+  --border-thick: 1.5px;
+
+  /* --- Layout --- */
+  --container:       1240px;
+  --container-prose: 68ch;
+  --gutter:    clamp(20px, 4vw, 64px); /* @kind spacing */
+  --section-y: clamp(64px, 9vw, 144px); /* @kind spacing */
+}
